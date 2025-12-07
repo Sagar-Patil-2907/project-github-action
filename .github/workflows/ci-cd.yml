@@ -43,7 +43,7 @@ jobs:
       run: gitleaks detect source . -r gitleaks-report.json -f json
 
   test:
-    runs-on: Ubuntu-hosted
+    runs-on: Ubuntu-latest
     needs: security-check
     steps:
     - uses: actions/checkout@v4
